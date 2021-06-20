@@ -1,0 +1,24 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #EB8222;
+    padding: .5em;
+    min-height: 5vh;
+    gap: 1em;
+}
+
+footer > a{
+    color: white;
+    display: block;
+    padding: .5em;
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .3s ease;
+}
+
+footer > a:hover{
+    color: rgba(255, 255, 255, 0.616);
+}

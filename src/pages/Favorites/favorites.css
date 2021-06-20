@@ -1,0 +1,48 @@
+.favoritesContainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.favoritesContainer h1{
+    text-align: center;
+}
+
+.favoritesContainer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.favoritesContainer ul > li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+}
+
+.favoritesContainer ul li > .btnGroup{
+    display: flex;
+    gap: 1.5em;
+}
+
+.favoritesContainer ul li .btnGroup > a, .favoritesContainer ul li .btnGroup > button{
+    padding: .5em;
+    border-radius: 5%;
+    font-size: 1.2em;
+    border: none;
+    transition: all .2s ease;
+}
+
+.favoritesContainer ul li .btnGroup > a{
+    background-color: #20BF55;
+    color: white;
+    text-decoration: none;
+}
+
+.favoritesContainer ul li .btnGroup > button{
+    background-color: #DA3E52;
+    color: white;
+}

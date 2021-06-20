@@ -1,0 +1,56 @@
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    width: 100%;
+    gap: 2em;
+}
+
+.principal div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal div > p{
+    width: 50%;
+    text-align: justify;
+}
+
+.principal div p.group > span{
+    font-weight: bold;
+}
+
+.principal div div.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-bottom: .5em;;
+}
+
+.principal div div.buttons > button, .principal div div.buttons > a{
+    border: none;
+    background-color: transparent;
+    color: black;
+    border-radius: .5em;
+    padding: .5em;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all .2s ease;
+}
+
+.principal div div.buttons > a{
+    text-decoration: none;
+}
+
+.principal div div.buttons > button:hover{
+    background-color: #20BF55;
+    color: white;
+}
+
+.principal div div.buttons > a:hover{
+    background-color: #DA3E52;
+    color: white;
+}

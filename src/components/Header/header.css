@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: #EB8222;
+}
+
+header > a{
+    text-decoration: none;
+    color: #FBFBFF;
+    display: block;
+    font-weight: bold;
+    font-size: 1.4em;
+    transition: all .5s ease;  
+    padding: .5em;
+}
+
+header > a:hover{
+    color: rgba(255, 255, 255, 0.616);
+    transform: scale(1.2);
+}

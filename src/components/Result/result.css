@@ -1,0 +1,50 @@
+div.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5em;
+    padding: .5em;
+    border-radius: .5em;
+    background-color: rgba(206, 206, 206, 0.753);
+    width: 25vw;
+    height: 70vh;
+}
+
+div.result > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5em;
+}
+
+div.result > div h1{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+div.result > div li{
+    list-style: none;
+}
+
+div.result > div p{
+    font-size: 1em;
+    text-align: center;
+}
+
+div.result > div span{
+    font-weight: bold;
+}
+
+div.result > div .imgBack{
+    border-radius: 5%;
+    max-height: 50vh;
+}
+
+div.result div > .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;  
+    font-weight: bold;
+}
