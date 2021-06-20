@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useContext} from 'react';
 import { useParams } from 'react-router';
 import { MovieContext } from '../../contexts/movie';
+import { toast } from 'react-toastify';
 import api from '../../services/api';
 import './description.css';
 
@@ -29,14 +30,14 @@ export default function Description() {
         // console.log(favoriteList.map((item) => item));
 
         if(hasMovie){
-            alert('Filme Já salvo');
+            toast.error('Filme Já salvo');
             return;
         }
 
         favoriteList.push(movie.map(item => item.Title).toString());
         // Transforma object em json
         localStorage.setItem('movies', JSON.stringify(favoriteList));
-        alert('Filme Salvo com sucesso');
+        toast.success('Filme Salvo com sucesso');
     }
 
     if(loading){

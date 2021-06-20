@@ -4,15 +4,21 @@
     flex-direction: column;
     align-items: center;
     min-height: 80vh;
-    gap: .5em
+    gap: .5em;
 }
 
 .principal > p{
-    text-align: center;
+    text-align: justify;
     max-width: 50vw;
 }
 
 .principal > img{
     border: .2em solid rgb(167, 167, 167);
     border-radius: 50%;
+}
+
+@media(max-width: 600px){
+    .principal > p{
+        max-width: 60vw;
+    } 
 }

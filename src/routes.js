@@ -4,7 +4,6 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 // Pages
 import Home from './pages/Home';
 import Favorites from './pages/Favorites'
-import Login from './pages/Login';
 import About from './pages/About';
 import Description from './pages/Description';
 import Error from './pages/Error';
@@ -22,7 +21,6 @@ export default function Routes() {
             <Route exact path='/' component={Home}/>
             <Route exact path='/description/:id' component={Description}/>
             <Route exact path='/favorites' component={Favorites}/>
-            <Route exact path='/login' component={Login}/>
             <Route exact path='/about' component={About}/>
             <Route path='*' component={Error}/>
         </Switch>

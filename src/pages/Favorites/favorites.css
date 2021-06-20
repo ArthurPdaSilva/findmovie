@@ -1,7 +1,8 @@
 .favoritesContainer{
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 90vh;
+    box-sizing: border-box;
 }
 
 .favoritesContainer h1{
@@ -20,12 +21,13 @@
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    width: 50%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .favoritesContainer ul li > .btnGroup{
     display: flex;
-    gap: 1.5em;
+    gap: 1em;
 }
 
 .favoritesContainer ul li .btnGroup > a, .favoritesContainer ul li .btnGroup > button{
@@ -34,6 +36,12 @@
     font-size: 1.2em;
     border: none;
     transition: all .2s ease;
+    cursor: pointer;
+}
+
+.favoritesContainer ul li > span{
+    font-size: 2em;
+    font-weight: 500;
 }
 
 .favoritesContainer ul li .btnGroup > a{

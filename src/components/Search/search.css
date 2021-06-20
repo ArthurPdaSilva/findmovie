@@ -24,3 +24,10 @@ div.search > input{
     width: 100%;
     box-sizing: border-box;
 }
+
+@media(max-width: 600px){
+    div.search{
+        min-width: 80vw;
+        height: 45vh;
+    }
+}

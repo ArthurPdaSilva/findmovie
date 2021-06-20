@@ -9,6 +9,7 @@ div.result{
     background-color: rgba(206, 206, 206, 0.753);
     width: 25vw;
     height: 70vh;
+    box-sizing: border-box;
 }
 
 div.result > div{
@@ -47,4 +48,16 @@ div.result div > .btn{
     justify-content: center;
     text-decoration: none;  
     font-weight: bold;
+}
+
+@media(max-width: 600px){
+    div.result{
+        min-width: 80vw;
+        height: 45vh;
+    }
+
+    div.result > div .imgBack{
+        border-radius: 5%;
+        max-height: 25vh;
+    }
 }

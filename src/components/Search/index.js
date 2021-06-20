@@ -1,6 +1,7 @@
 import React, {useState, useContext} from 'react';
 import { MovieContext } from '../../contexts/movie';
 import api from '../../services/api';
+import { toast } from 'react-toastify';
 import './search.css';
 
 export default function Search() {
@@ -9,6 +10,11 @@ export default function Search() {
     
 
     async function searchMovie(){
+        if(field === ''){
+            toast.error('Digite o nome do filme, primeiro!')
+            return;
+        }
+        
         const response = await api.get(`?t=${field}&apikey=${key}`)
         setMovie([response.data]);
         setField('');
