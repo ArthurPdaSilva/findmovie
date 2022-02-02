@@ -4,7 +4,7 @@
     justify-content: center;
     min-height: 80vh;
     width: 100%;
-    gap: 2em;
+    gap: 2.5em;
 }
 
 .principal div{
@@ -12,6 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1em;
 }
 
 .principal div > p{
@@ -33,7 +34,6 @@
 .principal div div.buttons > button, .principal div div.buttons > a{
     border: none;
     background-color: transparent;
-    color: black;
     border-radius: .5em;
     padding: .5em;
     cursor: pointer;
@@ -45,12 +45,12 @@
     text-decoration: none;
 }
 
-.principal div div.buttons > button:hover{
+.principal div div.buttons > button{
     background-color: #20BF55;
     color: white;
 }
 
-.principal div div.buttons > a:hover{
+.principal div div.buttons > a{
     background-color: #DA3E52;
     color: white;
 }

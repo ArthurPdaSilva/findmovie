@@ -7,7 +7,7 @@ div.result{
     padding: .5em;
     border-radius: .5em;
     background-color: rgba(206, 206, 206, 0.753);
-    width: 25vw;
+    min-width: 25vw;
     height: 70vh;
     box-sizing: border-box;
 }

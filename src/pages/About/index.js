@@ -9,7 +9,10 @@ export default function About() {
       <h1>Arthur P. da Silva.</h1>
       <hr/>
       <p>
-        Tenho 2 anos como programador Web, com conhecimentos de HTML e CSS, Javascript, React JS e React Native. Recém formado na Escola Cidadã Técnica Inácio Antonino, e cursando, atualmente, Instituto Federal de Educação, Ciência e Tecnologia da Paraíba – IFPB. Estagiei na Empresa de Comercialização de Eletrônicos. Lojas Icarlos, em Serra Branca - Paraíba, dentre as inúmeras tarefas atribuidas a mim, no setor de gestão do E-commerce da loja, eu tive esse contato com a web utilizando o framework Wix.
+        Venho estudando programação a 4 anos; 
+        tendo conhecimentos em: HTML, CSS, Javascript, React JS e Node.
+        Atualmente estou tendo como alvo de estudo React JS, Node JS e Java. 
+        Fui monitor bolsista da disciplina de Programação I no IFPB.
       </p>
     </div>
   );

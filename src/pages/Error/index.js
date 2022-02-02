@@ -1,17 +1,18 @@
 import React from 'react';
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router';
 import './error.css';
 
 export default function Error() {
-  const history = useHistory();
+  const history = useNavigate();
   setTimeout(() => {
-    history.replace('/')
+    history('/')
   }, 5000)
 
   return (
     <div className='errorContainer'>
-      <h1>Página não Encontrada</h1>
-      <span>Redirecionando para a Página Inicial</span>
+      <h1>ERROR 404</h1>
+      <span>Página não encontrada!</span>
+      <span>Redirecionando para a Página Inicial...</span>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, {useState, useEffect, useContext, useCallback} from 'react';
 import { useParams } from 'react-router';
 import { MovieContext } from '../../contexts/movie';
 import { toast } from 'react-toastify';
@@ -20,25 +20,18 @@ export default function Description() {
         loading();
     }, [id, key, setMovie]);
 
-    function saveMovie(){
+    const saveMovie = useCallback(() => {
         const list = localStorage.getItem('movies');
-        // Trasnforma Json em object
         let favoriteList = JSON.parse(list) || [];
-
         const hasMovie = favoriteList.includes(movie.map(item => item.Title).toString());
-
-        // console.log(favoriteList.map((item) => item));
-
         if(hasMovie){
             toast.error('Filme Já salvo');
             return;
         }
-
         favoriteList.push(movie.map(item => item.Title).toString());
-        // Transforma object em json
         localStorage.setItem('movies', JSON.stringify(favoriteList));
         toast.success('Filme Salvo com sucesso');
-    }
+    }, [movie])
 
     if(loading){
         return( 
